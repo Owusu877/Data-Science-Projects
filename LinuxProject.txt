@@ -1,0 +1,15 @@
+TASK 1
+-- list the contents of "/etc" and direct to file named file1.txt
+
+ls /etc > file1.txt
+ls /etc
+
+-- list the contents of "/run" and direct to file named file2.txt
+
+ls /run > file2.txt
+ls /run
+
+--- In one pipeline, Combine file1.txt and file2.txt together in one file...
+--- ...called unsorted.txt and sort the output to another file named reversed.txt
+
+cat file1.txt file2.txt |tee unsotred.txt | sort -r > reversed.txt
