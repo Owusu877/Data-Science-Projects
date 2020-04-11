@@ -5,20 +5,18 @@ TASK 1
 -- open a test editor named hungry.sh
 
 nano hungry.sh 
+
 -- Inside nano editor
 
 #!/bin/bash 
-
 echo "I am Hungry. Feed me Data." >> ~/demands.txt 
-
 date >> ~/demands.log
 
 TASK 2
 
 -- Run the contents of hungry.sh everyminute
-Crontab row:
--- Open the crontab 
 
+-- Open the crontab 
 crontab -e 
 
 * * * * * bash ~/hungry.sh
